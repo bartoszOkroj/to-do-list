@@ -1,0 +1,114 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 960px;
+  }
+}
+nav {
+  height: 35vh;
+  width: 100%;
+  border-bottom: 1px black solid;
+}
+nav .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+nav p {
+  font-size: 20px;
+  font-weight: bold;
+}
+nav .box {
+  width: 100%;
+  height: 70%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 768px) {
+  nav button {
+    width: 210px;
+  }
+  nav p, nav button {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  nav {
+    height: 150px;
+  }
+  nav button {
+    width: auto;
+    cursor: pointer;
+  }
+  nav .box {
+    width: 90%;
+    height: auto;
+    flex-direction: row;
+  }
+}
+.list-of-tasks {
+  display: block;
+}
+.list-of-tasks li {
+  height: 30vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  border-bottom: 1px black solid;
+}
+.list-of-tasks li span {
+  font-size: 20px;
+}
+.list-of-tasks li button {
+  width: 60%;
+  font-size: 20px;
+}
+.list-of-tasks li .btn-delete {
+  background: red;
+}
+
+@media screen and (min-width: 768px) {
+  .list-of-tasks li span, .list-of-tasks li button {
+    font-size: 30px;
+  }
+  .list-of-tasks li input {
+    width: 60%;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .list-of-tasks {
+    display: block;
+  }
+  .list-of-tasks li {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 30px;
+    border-bottom: 1px black solid;
+  }
+  .list-of-tasks li span, .list-of-tasks li button {
+    width: 15%;
+    font-size: 20px;
+  }
+  .list-of-tasks li button {
+    cursor: pointer;
+  }
+}
+body, button {
+  font-family: "Roboto", sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */

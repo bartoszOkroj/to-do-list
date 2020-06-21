@@ -1,0 +1,42 @@
+nav
+  height: 35vh
+  width: 100%
+  border-bottom: 1px black solid
+
+  .container
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+
+  p
+    font-size: 20px
+    font-weight: bold
+
+  .box
+    width: 100%
+    height: 70%
+    display: none
+    flex-direction: column
+    justify-content: space-around
+
+@media screen and (min-width: 768px)
+  nav
+    button
+      width: 210px
+    p, button
+      font-size: 30px
+
+@media screen and (min-width: 1024px)
+  nav
+    height: 150px
+
+    button
+      width: auto
+      cursor: pointer
+
+    .box
+      width: 90%
+      height: auto
+      flex-direction: row

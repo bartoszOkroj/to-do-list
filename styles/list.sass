@@ -1,0 +1,54 @@
+.list-of-tasks
+  display: block
+
+  li
+    height: 30vh
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-direction: column
+    padding: 30px
+    border-bottom: 1px black solid
+
+    span
+      font-size: 20px
+
+    button
+      width: 60%
+      font-size: 20px
+
+    .btn-delete
+      background: red
+
+@media screen and (min-width: 768px)
+  .list-of-tasks
+
+    li
+
+      span, button
+        font-size: 30px
+
+      input
+        width: 60%
+        font-size: 30px
+
+@media screen and (min-width: 1024px)
+
+  .list-of-tasks
+    display: block
+
+    li
+      height: auto
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-direction: row
+      padding: 30px
+      border-bottom: 1px black solid
+
+      span, button
+        width: 15%
+        font-size: 20px
+
+      button
+        cursor: pointer
